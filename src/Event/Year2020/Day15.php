@@ -51,9 +51,7 @@ class Day15 implements DayInterface
         foreach ($start as $index => $value) {
             $memory[$value] = $index + 1;
         }
-
         $last = $value;
-        unset($memory[$last]);
 
         for ($turn = count($start); $turn < $number; $turn++) {
             $temp = $last;
